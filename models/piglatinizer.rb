@@ -6,6 +6,7 @@ class PigLatinizer
   vowels = ["a", "e", "i", "o", "u"]
     if vowels.include?(word[0].downcase)
       word + "way"
+    elsif pairs.include?(word[0,1].downcase)
     else
       word[1..-1] + word[0] + "ay"
     end
