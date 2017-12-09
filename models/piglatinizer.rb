@@ -4,7 +4,7 @@ class PigLatinizer
   arr = word.split("")
   size = word.size
   vowels = ["a", "e", "i", "o", "u"]
-    if vowels.include?(word[0])
+    if vowels.include?(word[0].downcase)
       word + "way"
     else
       word[1,size] + word[0] + "ay"
