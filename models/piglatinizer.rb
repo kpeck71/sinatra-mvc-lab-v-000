@@ -7,7 +7,7 @@ class PigLatinizer
     if vowels.include?(word[0])
       word + "way"
     else
-      word[w,size] + word[0,w] + "ay"
+      word[1..-1] + word[0,w] + "ay"
     end
   end
 
