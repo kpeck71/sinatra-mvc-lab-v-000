@@ -7,10 +7,13 @@ class PigLatinizer
   pairs = ["ch","sh","sm","st","th","gl","pl"]
     if vowels.include?(word[0].downcase)
       word + "way"
-    elsif pairs.include?(word[0,1].downcase)
-      word[1..0] + word[0,1] + "ay"
     else
-      word[1..-1] + word[0] + "ay"
+      consonants = ""
+      while !vowels.include?(word[0])
+        consonants << word[0]
+        word = word.split("")[1..-1].join
+      end
+      word + consonants + 'ay'
     end
   end
 
