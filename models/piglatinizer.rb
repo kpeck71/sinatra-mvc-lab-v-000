@@ -1,7 +1,7 @@
 class PigLatinizer
 
   def piglatinize(word)
-  skip = ["i", "me", "to", "too", "a", "an", "in", "and", "on"]
+  arr = word.split("")
   vowels = ["a", "e", "i", "o", "u"]
 
     if skip.include?(word)
