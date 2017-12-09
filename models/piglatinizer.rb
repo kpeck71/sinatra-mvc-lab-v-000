@@ -2,7 +2,7 @@ class PigLatinizer
 
   def piglatinize(word)
   arr = word.split("")
-  size = word.size
+  size = word.length
   vowels = ["a", "e", "i", "o", "u"]
   w = arr.index{|c| vowels.include?(c)}
     if w == 0
