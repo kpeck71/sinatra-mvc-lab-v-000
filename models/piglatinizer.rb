@@ -8,7 +8,7 @@ class PigLatinizer
     if w == 0
       word + "way"
     else
-      word[w,size] + word[0,w] + "ay"
+      word[w,length] + word[0,w] + "ay"
     end
   end
 
