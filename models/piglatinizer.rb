@@ -4,7 +4,7 @@ class PigLatinizer
   arr = word.split("")
   size = word.size
   vowels = ["a", "e", "i", "o", "u"]
-  i = arr.index{|c| vowels.include?(c)}
+  w = arr.index{|c| vowels.include?(c)}
     if i == 0
       word + "way"
     else
